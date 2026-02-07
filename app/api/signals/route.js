@@ -11,9 +11,18 @@ export async function GET() {
         type: "liquidity_event",
         description: "Liquidity added to a newly deployed contract",
         confidence: "low",
-        observed_at: new Date().toISOString(),
+        observed_at: "2026-02-07T18:46:22.372Z",
         source: "onchain_scan",
         note: "Raw observation only. No trade advice."
+      },
+      {
+        id: "bf-vol-0002",
+        type: "volume_anomaly",
+        description: "Unusual token transfer volume detected in a short time window",
+        confidence: "low",
+        observed_at: new Date().toISOString(),
+        source: "onchain_scan",
+        note: "Early-stage volume observation. Needs confirmation."
       }
     ]
   });
