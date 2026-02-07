@@ -27,3 +27,12 @@ export async function GET() {
     ]
   });
 }
+{
+  id: "bf-ctr-0003",
+  type: "contract_deployment",
+  description: "New smart contract deployed on Base",
+  confidence: "low",
+  observed_at: new Date().toISOString(),
+  source: "onchain_scan",
+  note: "Raw deployment event. Contract not analyzed."
+}
