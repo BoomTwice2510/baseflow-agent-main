@@ -20,19 +20,19 @@ export async function GET() {
         type: "volume_anomaly",
         description: "Unusual token transfer volume detected in a short time window",
         confidence: "low",
-        observed_at: new Date().toISOString(),
+        observed_at: "2026-02-07T19:27:42.977Z",
         source: "onchain_scan",
         note: "Early-stage volume observation. Needs confirmation."
+      },
+      {
+        id: "bf-ctr-0003",
+        type: "contract_deployment",
+        description: "New smart contract deployed on Base",
+        confidence: "low",
+        observed_at: new Date().toISOString(),
+        source: "onchain_scan",
+        note: "Raw deployment event. Contract not analyzed."
       }
     ]
   });
-}
-{
-  id: "bf-ctr-0003",
-  type: "contract_deployment",
-  description: "New smart contract deployed on Base",
-  confidence: "low",
-  observed_at: new Date().toISOString(),
-  source: "onchain_scan",
-  note: "Raw deployment event. Contract not analyzed."
 }
